@@ -31,7 +31,7 @@ weatherApp.controller('homeController', ['$scope', 'cityService', function($scop
   $scope.city = cityService.city;
 
   $scope.$watch('city', function () {
-    cityService.name = $scope.city;
+    cityService.city = $scope.city;
   });
 
 }]);
